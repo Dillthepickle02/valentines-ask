@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>Will you be my Valentine?</title>
+    <style>
+      body {
+        text-align: center;
+        font-size: 2em;
+        background-color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Will you be my Valentine?</h1>
+    <p>
+      <button id="yes-button">Yes</button>
+      <button id="no-button">No</button>
+    </p>
+    <p id="result"></p>
+    <script>
+      const yesButton = document.getElementById("yes-button");
+      const noButton = document.getElementById("no-button");
+      const result = document.getElementById("result");
+
+      yesButton.addEventListener("click", function () {
+        result.textContent = "Yay! I'm so happy!";
+      });
+
+      noButton.addEventListener("click", function () {
+        result.textContent = "Oh no, that's too bad :(";
+      });
+    </script>
+  </body>
+</html>
